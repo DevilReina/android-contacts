@@ -6,7 +6,7 @@ public class BaseListDiffCallBack <T extends ListDiffInterface<T>> extends DiffU
 
     @Override
     public boolean areItemsTheSame(@NonNull T oldItem, @NonNull T newItem) {
-        return oldItem.theSameAs(oldItem) == newItem.theSameAs(newItem);
+        return oldItem.theSameAs(newItem);
     }
     @Override
     public boolean areContentsTheSame(@NonNull T oldItem, @NonNull T newItem) {
